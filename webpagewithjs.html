@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <title>Mohammed's Custom Lightbulb Page</title>
+  </head>
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
+  <body style="background-color: pink; text-align: center; font-family: Arial, sans-serif;">
+    <h2>Lightbulb Webpage by Mohammed Mohamed</h2>
 
-<p>JavaScript can change HTML attribute values.</p>
+    <p>
+      This simple webpage uses HTML and JavaScript to turn a lightbulb on and off.
+      Click the buttons below to see how JavaScript changes the image source.
+    </p>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+      💡 Turn On the Light
+    </button>
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:150px; margin: 20px;">
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">
+      🌙 Turn Off the Light
+    </button>
 
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
-</body>
+    <p style="margin-top: 20px; font-style: italic;">
+      Customized and coded by <strong>Mohammed Mohamed</strong>
+    </p>
+  </body>
 </html>
+
